@@ -30,15 +30,17 @@ a:hover {
   padding: 50px 20px;
   padding-top: 100px;
   display: flex;
-  background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  margin-top: -80px;
+  /* background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%); */
   display: flex;
-  background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  /* background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%); */
 }
 @media screen and (max-width: 768px) {
   .wrapper {
     height: auto;
     min-height: 100vh;
     padding-top: 100px;
+    margin-top: -80px;
   }
 }
 .profile-card {
