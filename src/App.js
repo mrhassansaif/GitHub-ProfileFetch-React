@@ -23,20 +23,21 @@ function App() {
 
     return (
         <>
+            <div className="profile-card-ctr">
+                <input className="profile-card__button button--blue js-message-btn" onChange={userEvent} />
 
+            </div>
             <div className="wrapper" >
-                <div class="search" id="search">
-                    <input type="text" name="" id="user" onChange={userEvent}
-                    />
-                </div>
+
+
                 <div className="profile-card js-profile-card">
                     <div className="profile-card__img">
                         <img src={userData.avatar_url} alt="profile card" />
                     </div>
                     <div className="profile-card__cnt js-profile-cnt">
                         <div className="profile-card__name">{userData.name}</div>
-                        <div className="profile-card__txt">Company <strong>{userData.company}</strong></div>
-                        <div className="profile-card__txt">Bio <strong>{userData.bio}</strong></div>
+                        <div className="profile-card__txt">Company: <strong>{userData.company}</strong></div>
+                        <div className="profile-card__txt">Bio: <strong>{userData.bio}</strong></div>
                         <div className="profile-card-inf">
                             <div className="profile-card-inf__item">
                                 <div className="profile-card-inf__title">{userData.followers}</div>
@@ -52,9 +53,7 @@ function App() {
                                     Repositories</div>
                             </div>
                         </div>
-                        <div className="profile-card-ctr">
-                            <button className="profile-card__button button--blue js-message-btn">Contact Me</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
