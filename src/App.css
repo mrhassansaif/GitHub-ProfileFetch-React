@@ -22,6 +22,25 @@ a:hover {
   stroke: currentColor;
   fill: currentColor;
 }
+/* 
+button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6944ff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+  background-color: #6c44fc;
+  } */
+
+
 .wrapper {
   width: 100%;
   width: 100%;

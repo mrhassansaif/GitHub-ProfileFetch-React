@@ -6,10 +6,23 @@ import { useEffect, useState } from "react";
 
 function App() {
     const [userN, setuserN] = useState([])
-    const [userData, setuserData] = useState([])
 
-    const userEvent = (event) => {
-        setuserN(event.target.value)
+    const dummyUserData = {
+      name: "John Doe",
+      company: "ABC Company",
+      bio: "A passionate developer",
+      followers: 100,
+      following: 50,
+      public_repos: 20,
+      avatar_url: "https://via.placeholder.com/150",
+    };
+
+    const [userData, setuserData] = useState(dummyUserData)
+
+
+    const userEvent = () => {
+        let userName = document.getElementById("UserName").value 
+        setuserN(userName)
         console.log(userN)
     }
 
@@ -24,7 +37,8 @@ function App() {
     return (
         <>
             <div className="profile-card-ctr">
-                <input className="profile-card__button button--blue js-message-btn" onChange={userEvent} />
+                <input className="profile-card__button button--blue js-message-btn" placeholder="mrhassansaif" id="UserName"  />
+                <button className="profile-card__button button--blue js-message-btn" onClick={userEvent}>fetch</button>
 
             </div>
             <div className="wrapper" >
